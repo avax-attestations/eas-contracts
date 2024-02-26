@@ -18,7 +18,8 @@ export enum DeploymentNetwork {
   PolygonMumbai = 'polygon-mumbai',
   ScrollSepolia = 'scroll-sepolia',
   LineaGoerli = 'linea-goerli',
-  Hardhat = 'hardhat'
+  Hardhat = 'hardhat',
+  Fuji = 'fuji'
 }
 
 export const ZERO_ADDRESS = ZeroAddress;

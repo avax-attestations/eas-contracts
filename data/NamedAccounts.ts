@@ -27,6 +27,7 @@ export const NamedAccounts = {
     [DeploymentNetwork.PolygonMumbai]: deployer,
     [DeploymentNetwork.ScrollSepolia]: deployer,
     [DeploymentNetwork.LineaGoerli]: deployer,
+    [DeploymentNetwork.Fuji]: deployer,
     [DeploymentNetwork.Hardhat]: 0
   }
 };
