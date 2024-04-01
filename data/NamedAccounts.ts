@@ -28,6 +28,7 @@ export const NamedAccounts = {
     [DeploymentNetwork.ScrollSepolia]: deployer,
     [DeploymentNetwork.LineaGoerli]: deployer,
     [DeploymentNetwork.Fuji]: deployer,
+    [DeploymentNetwork.Avalanche]: deployer,
     [DeploymentNetwork.Hardhat]: 0
   }
 };

@@ -36,6 +36,7 @@ interface EnvOptions {
   SCROLL_SEPOLIA_PROVIDER_URL?: string;
   LINEA_GOERLI_PROVIDER_URL?: string;
   FUJI_PROVIDER_URL?: string;
+  AVALANCHE_PROVIDER_URL?: string;
   PROFILE?: boolean;
 }
 
@@ -66,6 +67,7 @@ const {
   SCROLL_SEPOLIA_PROVIDER_URL = '',
   LINEA_GOERLI_PROVIDER_URL = '',
   FUJI_PROVIDER_URL = '',
+  AVALANCHE_PROVIDER_URL = '',
   PROFILE: isProfiling
 }: EnvOptions = process.env as any as EnvOptions;
 
@@ -260,7 +262,17 @@ const config: HardhatUserConfig = {
       verify: {
         etherscan: { apiKey: '' }
       },
+    },
+    [DeploymentNetwork.Avalanche]: {
+      chainId: 43114,
+      url: AVALANCHE_PROVIDER_URL,
+      saveDeployments: true,
+      live: true,
+      verify: {
+        etherscan: { apiKey: '' }
+      },
     }
+
   },
 
   paths: {

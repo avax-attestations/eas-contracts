@@ -19,7 +19,8 @@ export enum DeploymentNetwork {
   ScrollSepolia = 'scroll-sepolia',
   LineaGoerli = 'linea-goerli',
   Hardhat = 'hardhat',
-  Fuji = 'fuji'
+  Fuji = 'fuji',
+  Avalanche = 'avalanche'
 }
 
 export const ZERO_ADDRESS = ZeroAddress;
